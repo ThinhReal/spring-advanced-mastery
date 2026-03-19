@@ -5,8 +5,16 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class ProjectConfig {
+
     @Bean
     public CustomFeature customFeature() {
+
         return new CustomFeature();
     }
+
+    @Bean
+    public CustomContact customContact() {
+        return new CustomContact();
+    }
+
 }
